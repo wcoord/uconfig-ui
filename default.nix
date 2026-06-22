@@ -6,6 +6,7 @@ let
     lib
     nodejs_26
     buildNpmPackage
+    svelte-check
     ;
 in
 
@@ -23,9 +24,14 @@ buildNpmPackage (finalAttrs: {
   npmDepsHash = "sha256-e+TdjJLgy5kXkrfpwTH2hQybHIS68lvUaPrYt9jsnrQ=";
   npmPackFlags = [ "--ignore-scripts" ]; # Unclear if this is necessary
 
+  nativeBuildInputs = [ svelte-check ];
+
   dontNpmInstall = true;
   installPhase = ''
     runHook preInstall
+
+    # buildNpmPackage doesn't have a checkPhase so we run tests here
+    svelte-check
 
     cp -r dist $out
 
