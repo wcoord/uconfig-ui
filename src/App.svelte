@@ -48,7 +48,11 @@
   ]
 
   function radio_defaults(band) {
-    return { 'channel-mode': 'HE', 'channel-width': default_width(band) }
+    const defaultChannel = radioDef.properties['channel-mode'].default;
+    return {
+      'channel-mode': defaultChannel,
+      'channel-width': default_width(band)
+    }
   }
 
   // Top-level cards (cards view) act as a single accordion.
