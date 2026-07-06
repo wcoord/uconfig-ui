@@ -128,6 +128,6 @@ remote still uses); run its `generate.sh` first to build `generated/schema.json`
 
 ## License
 
-Copyright (C) 2026  John Crispin
+Copyright (C) 2026  Zach Mandeville, Devan Carpenter, John Crispin
 
 SPDX-License-Identifier: GPL-2.0-only

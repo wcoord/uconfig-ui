@@ -4,8 +4,10 @@
 
 import { width_options } from './channels.js'
 import { PORT_CAPS } from './ports.js'
+import { def_get } from './schema.js'
 
-const MODE_ORDER = ['HT', 'VHT', 'HE', 'EHT']
+const radioDef = def_get('radio');
+const MODE_ORDER = radioDef.properties['channel-mode'].enum;
 
 // Raw `{ capabilities, wiphy }` result, or null when not connected to a device.
 export const capabilities = $state({ data: null })
