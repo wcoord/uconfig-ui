@@ -92,6 +92,10 @@
   let loginError = $state(null)
   let loggingIn = $state(false)
   let connState = $state('idle') // 'connecting' | 'ready' | 'error'
+  let savedDevices = $state([
+    // include local address by default, e.g., connecting directly to router.
+    {name: 'This device', address: window.location.hostname}
+  ])
   function start_default() {
     example_load('default')
     screen = 'builder'
@@ -339,7 +343,7 @@
           </div>
           <div class="flex items-center gap-2">
             <span class="h-px flex-1 bg-zinc-200"></span>
-            <span class="text-xs text-zinc-400">{t('or connect to a device')}</span>
+            <span class="text-xs text-zinc-400">{t('or connect to another device')}</span>
             <span class="h-px flex-1 bg-zinc-200"></span>
           </div>
           <form class="flex items-center gap-2" onsubmit={(e) => { e.preventDefault(); host_connect() }}>
@@ -348,6 +352,15 @@
               {t('Connect')}
             </button>
           </form>
+          <p class='text-zinc-400 text-xs'>choose from saved devices</p>
+          {#each savedDevices as device}
+          <button
+            title={device.address}
+            class="btn w-fit text-xs transition-colors"
+            class:bg-zinc-400={host === device.address}
+            onclick={() => {host = device.address; }}
+          >{device.name}</button>
+          {/each}
         </div>
       </div>
     </div>
