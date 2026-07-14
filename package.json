@@ -17,6 +17,7 @@
     "vite": "^6.3.5"
   },
   "dependencies": {
-    "@formatjs/intl": "^4.1.13"
+    "@formatjs/intl": "^4.1.13",
+    "svelte-spa-router": "^5.1.1"
   }
 }
