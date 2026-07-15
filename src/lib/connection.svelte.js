@@ -12,8 +12,9 @@ let ready_resolve = null
 let ready_reject = null
 let ready_timer = null
 
+
 export const connection = $state({
-  status: 'idle', // 'idle' | 'connecting' | 'connected'
+  status: 'idle', // 'idle' | 'connecting' | 'connected' | 'error'
   mode: null, // 'standalone' | 'ucoord'
   host: null,
   error: null
