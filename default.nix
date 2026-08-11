@@ -21,7 +21,7 @@ buildNpmPackage (finalAttrs: {
     cp ${./package-lock.json} package-lock.json
   '';
 
-  npmDepsHash = "sha256-e+TdjJLgy5kXkrfpwTH2hQybHIS68lvUaPrYt9jsnrQ=";
+  npmDepsHash = "sha256-3+D2TVaPh8nNAq2IapYcaD++OH0A4UDTbvtb6XpTcsQ=";
   npmPackFlags = [ "--ignore-scripts" ]; # Unclear if this is necessary
 
   nativeBuildInputs = [ svelte-check ];
