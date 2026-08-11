@@ -77,7 +77,7 @@
             <p class="text-[11px] text-amber-600">{nameError}</p>
           {/if}
         </div>
-        <SchemaObject obj={draft} schema={valueSchema} {context} />
+        <SchemaObject obj={draft} schema={valueSchema} />
       </div>
       <div class="mt-4 flex justify-end gap-2">
         <button type="button" class="btn-sm" onclick={() => (showModal = false)}>{t('Cancel')}</button>

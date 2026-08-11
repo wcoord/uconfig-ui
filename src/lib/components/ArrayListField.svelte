@@ -28,10 +28,10 @@
       if (min != null && value < min) return t('Must be at least {min}', { min })
       if (max != null && value > max) return t('Must be at most {max}', { max })
     }
-    if (cidr4 && !/^(\d{1,3}\.){3}\d{1,3}\/\d{1,2}$/.test(value)) {
+    if (cidr4 && !/^(\d{1,3}\.){3}\d{1,3}\/\d{1,2}$/.test(entry.trim())) {
       return t('Must be a CIDR, e.g. 192.168.0.0/16')
     }
-    if (mac && !/^([0-9a-fA-F]{2}:){5}[0-9a-fA-F]{2}$/.test(value)) {
+    if (mac && !/^([0-9a-fA-F]{2}:){5}[0-9a-fA-F]{2}$/.test(entry.trim())) {
       return t('Must be a MAC, e.g. aa:bb:cc:dd:ee:ff')
     }
     if (items.includes(value)) return t('Already in the list')
