@@ -1,5 +1,5 @@
 // WebSocket JSON-RPC 2.0 client for a live uConfig device.
-// Endpoint: ws://<host>/uconfig, subprotocol "ui" (see uconfig WEBUI.md).
+// Endpoint: ws://<host>/uconfig, subprotocol "uconfig" (see uconfig WEBUI.md).
 
 const READY_TIMEOUT_MS = 8000
 
@@ -82,7 +82,7 @@ export function request(method, params) {
 export function connect(host) {
   return new Promise((resolve, reject) => {
     try {
-      socket = new WebSocket(`ws://${host}/uconfig`, 'ui')
+      socket = new WebSocket(`ws://${host}/uconfig`, 'uconfig')
     } catch (e) {
       reject(e)
       return
