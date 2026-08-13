@@ -38,4 +38,7 @@
   <AppMenu />
   <Router {routes} />
   <ConfirmModal />
+  <footer class='text-zinc-700 p-2 text-center text-xs italic'>
+    <p>built from commit <span class='font-mono'>{__COMMIT_HASH__}</span></p>
+  </footer>
 </div>
