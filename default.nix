@@ -4,8 +4,9 @@
 let
   inherit (pkgs)
     lib
-    nodejs_26
     buildNpmPackage
+    gitMinimal
+    nodejs_26
     svelte-check
     ;
 in
@@ -13,7 +14,7 @@ in
 buildNpmPackage (finalAttrs: {
   name = "uconfig-builder";
 
-  src = lib.cleanSource ./.;
+  src = ./.;
 
   nodejs = nodejs_26;
 
@@ -24,7 +25,10 @@ buildNpmPackage (finalAttrs: {
   npmDepsHash = "sha256-3+D2TVaPh8nNAq2IapYcaD++OH0A4UDTbvtb6XpTcsQ=";
   npmPackFlags = [ "--ignore-scripts" ]; # Unclear if this is necessary
 
-  nativeBuildInputs = [ svelte-check ];
+  nativeBuildInputs = [
+    gitMinimal
+    svelte-check
+  ];
 
   dontNpmInstall = true;
   installPhase = ''
