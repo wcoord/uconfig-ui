@@ -1,3 +1,7 @@
+// SPDX-FileCopyrightText: 2026 John Crispin <john@phrozen.org>
+//
+// SPDX-License-Identifier: GPL-2.0-only
+
 import { ref_resolve, def_get, title_for } from './schema.js'
 import { default_width } from './channels.js'
 

@@ -1,3 +1,9 @@
+<!--
+SPDX-FileCopyrightText: 2026 Zach Mandeville <webmaster@coolguy.website>
+
+SPDX-License-Identifier: GPL-2.0-only
+-->
+
 <script>
   import { onMount } from 'svelte';
   import { push } from 'svelte-spa-router'

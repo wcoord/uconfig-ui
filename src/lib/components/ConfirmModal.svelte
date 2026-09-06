@@ -1,3 +1,9 @@
+<!--
+SPDX-FileCopyrightText: 2026 John Crispin <john@phrozen.org>
+
+SPDX-License-Identifier: GPL-2.0-only
+-->
+
 <script>
   import { confirmState, confirm_answer } from '../confirm.svelte.js'
   import { t } from '../i18n.svelte.js'

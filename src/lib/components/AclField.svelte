@@ -1,3 +1,9 @@
+<!--
+SPDX-FileCopyrightText: 2026 John Crispin <john@phrozen.org>
+
+SPDX-License-Identifier: GPL-2.0-only
+-->
+
 <script>
   import ArrayListField from './ArrayListField.svelte'
   import { def_get, ref_resolve } from '../schema.js'

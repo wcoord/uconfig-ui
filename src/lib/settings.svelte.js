@@ -1,3 +1,7 @@
+// SPDX-FileCopyrightText: 2026 John Crispin <john@phrozen.org>
+//
+// SPDX-License-Identifier: GPL-2.0-only
+
 // Central persisted settings. Reactive $state mirrored to localStorage; add new
 // keys here as more user preferences are introduced.
 const KEY = 'uconfig-builder'

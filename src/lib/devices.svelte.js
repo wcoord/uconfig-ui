@@ -1,3 +1,7 @@
+// SPDX-FileCopyrightText: 2026 John Crispin <john@phrozen.org>
+//
+// SPDX-License-Identifier: GPL-2.0-only
+
 // Cached result of the last `devices` call so the Network page can show data
 // immediately on re-entry while a fresh fetch runs in the background.
 

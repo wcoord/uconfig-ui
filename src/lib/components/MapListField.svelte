@@ -1,3 +1,10 @@
+<!--
+SPDX-FileCopyrightText: 2026 John Crispin <john@phrozen.org>
+SPDX-FileCopyrightText: 2026 Zach Mandeville <webmaster@coolguy.website>
+
+SPDX-License-Identifier: GPL-2.0-only
+-->
+
 <script>
   import SchemaObject from './SchemaObject.svelte'
   import ListBox from './ListBox.svelte'

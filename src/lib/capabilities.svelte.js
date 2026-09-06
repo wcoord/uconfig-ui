@@ -1,3 +1,8 @@
+// SPDX-FileCopyrightText: 2026 John Crispin <john@phrozen.org>
+// SPDX-FileCopyrightText: 2026 Zach Mandeville <webmaster@coolguy.website>
+//
+// SPDX-License-Identifier: GPL-2.0-only
+
 // Device capabilities pulled from the websocket `capabilities` method while
 // connected (standalone mode). When loaded, these drive the radio mode/width
 // options and the interface port list; otherwise the static defaults apply.

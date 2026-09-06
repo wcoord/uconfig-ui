@@ -1,3 +1,7 @@
+// SPDX-FileCopyrightText: 2026 John Crispin <john@phrozen.org>
+//
+// SPDX-License-Identifier: GPL-2.0-only
+
 // Hardcoded set of services available in headless mode. Later this will be
 // replaced by the list of services actually installed on a connected device.
 //

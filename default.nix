@@ -1,3 +1,8 @@
+# SPDX-FileCopyrightText: 2026 Devan Carpenter <devan@informatics.coop>
+# SPDX-FileCopyrightText: 2026 Zach Mandeville <webmaster@coolguy.website>
+#
+# SPDX-License-Identifier: GPL-2.0-only
+
 {
   pkgs ? import <nixpkgs> { },
 }:

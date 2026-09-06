@@ -1,3 +1,7 @@
+// SPDX-FileCopyrightText: 2026 John Crispin <john@phrozen.org>
+//
+// SPDX-License-Identifier: GPL-2.0-only
+
 // Sync src/lib/locales/en-GB.json with every translatable string in the app:
 // schema descriptions, schema enum values, humanised property titles, and any
 // t('...') call in source. Existing translations are preserved; new keys are

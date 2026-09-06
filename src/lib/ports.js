@@ -1,3 +1,7 @@
+// SPDX-FileCopyrightText: 2026 John Crispin <john@phrozen.org>
+//
+// SPDX-License-Identifier: GPL-2.0-only
+
 // Static port capabilities until real device detection is added: 1 WAN + 4 LAN.
 export const PORT_CAPS = ['wan', 'lan1', 'lan2', 'lan3', 'lan4']
 

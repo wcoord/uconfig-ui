@@ -1,3 +1,9 @@
+<!--
+SPDX-FileCopyrightText: 2026 John Crispin <john@phrozen.org>
+
+SPDX-License-Identifier: GPL-2.0-only
+-->
+
 <script>
   // Mobile (cards) layout of the device top-level menu: collapsible cards for
   // the pages, mirroring the builder's cards view. Its own accordion group so

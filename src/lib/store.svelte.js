@@ -1,3 +1,7 @@
+// SPDX-FileCopyrightText: 2026 John Crispin <john@phrozen.org>
+//
+// SPDX-License-Identifier: GPL-2.0-only
+
 import examples from './data/examples.json'
 import timezones from './data/timezones.json'
 import { def_get, schema_at, ref_resolve } from './schema.js'

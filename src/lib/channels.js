@@ -1,3 +1,7 @@
+// SPDX-FileCopyrightText: 2026 John Crispin <john@phrozen.org>
+//
+// SPDX-License-Identifier: GPL-2.0-only
+
 // Valid control/primary channels per band and bandwidth.
 //
 // The width-specific lists are ported verbatim from the device render code

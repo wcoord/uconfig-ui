@@ -1,3 +1,7 @@
+// SPDX-FileCopyrightText: 2026 John Crispin <john@phrozen.org>
+//
+// SPDX-License-Identifier: GPL-2.0-only
+
 // Inline descriptions for schema-auto-rendered fields (SchemaObject), keyed by
 // property key. Values are short keys; en-GB.json holds the verbose wording.
 // Layout-driven fields carry their own describe in layouts.js; this covers the

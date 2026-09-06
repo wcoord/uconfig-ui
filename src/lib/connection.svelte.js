@@ -1,3 +1,9 @@
+// SPDX-FileCopyrightText: 2026 Devan Carpenter <devan@informatics.coop>
+// SPDX-FileCopyrightText: 2026 John Crispin <john@phrozen.org>
+// SPDX-FileCopyrightText: 2026 Zach Mandeville <webmaster@coolguy.website>
+//
+// SPDX-License-Identifier: GPL-2.0-only
+
 // WebSocket JSON-RPC 2.0 client for a live uConfig device.
 // Endpoint: ws://<host>/uconfig, subprotocol "uconfig" (see uconfig WEBUI.md).
 

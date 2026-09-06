@@ -1,3 +1,7 @@
+// SPDX-FileCopyrightText: 2026 John Crispin <john@phrozen.org>
+//
+// SPDX-License-Identifier: GPL-2.0-only
+
 // Human labels for schema property keys. Kept free of any schema-JSON import so
 // the i18n extraction tooling can reuse title_for without an import assertion.
 

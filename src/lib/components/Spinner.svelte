@@ -1,3 +1,9 @@
+<!--
+SPDX-FileCopyrightText: 2026 John Crispin <john@phrozen.org>
+
+SPDX-License-Identifier: GPL-2.0-only
+-->
+
 <script>
   let { class: cls = 'h-5 w-5 text-zinc-400' } = $props()
 </script>
