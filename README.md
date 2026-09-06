@@ -125,3 +125,9 @@ cp ../uconfig/generated/schema.json src/lib/data/schema.json
 
 The data-model repo lives at `../uconfig` (historically named `uconfig-new`, which its git
 remote still uses); run its `generate.sh` first to build `generated/schema.json`.
+
+## License
+
+Copyright (C) 2026  John Crispin
+
+SPDX-License-Identifier: GPL-2.0-only
