@@ -4,7 +4,7 @@
 
 // Central persisted settings. Reactive $state mirrored to localStorage; add new
 // keys here as more user preferences are introduced.
-const KEY = 'uconfig-builder'
+const KEY = 'uconfig-ui'
 
 function load() {
   try {

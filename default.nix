@@ -17,7 +17,7 @@ let
 in
 
 buildNpmPackage (finalAttrs: {
-  name = "uconfig-builder";
+  name = "uconfig-ui";
 
   src = ./.;
 
@@ -27,7 +27,7 @@ buildNpmPackage (finalAttrs: {
     cp ${./package-lock.json} package-lock.json
   '';
 
-  npmDepsHash = "sha256-3+D2TVaPh8nNAq2IapYcaD++OH0A4UDTbvtb6XpTcsQ=";
+  npmDepsHash = "sha256-hdGp64ojUQr2Vv3kyfCxqOJca2YT9ZBsb1zen/g67e4=";
   npmPackFlags = [ "--ignore-scripts" ]; # Unclear if this is necessary
 
   nativeBuildInputs = [

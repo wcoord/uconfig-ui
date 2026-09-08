@@ -45,7 +45,7 @@ SPDX-License-Identifier: GPL-2.0-only
   <div class="w-full max-w-lg rounded-lg border border-zinc-200 bg-surface p-6 shadow-sm">
     <div class="mb-4 flex items-start justify-between gap-4">
       <div>
-        <h1 class="text-lg font-semibold tracking-tight">{t('uConfig builder')}</h1>
+        <h1 class="text-lg font-semibold tracking-tight">{t('uConfig UI')}</h1>
         <p class="mt-1 text-sm text-zinc-500">{t('Intent-based OpenWrt configuration')}</p>
       </div>
     </div>

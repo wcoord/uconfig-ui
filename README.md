@@ -1,4 +1,4 @@
-# uconfig builder
+# uconfig UI
 
 A single-page app for authoring [uconfig](../uconfig) documents, the intent-based
 configuration format for OpenWrt, and for managing a live device over its websocket

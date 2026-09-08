@@ -66,7 +66,7 @@ SPDX-License-Identifier: GPL-2.0-only
 
 <header class="flex-shrink-0 border-b border-zinc-200 bg-surface/90 backdrop-blur">
   <div class="relative mx-auto {view.mode === 'cards' ? 'max-w-3xl' : 'max-w-5xl'} px-4 py-3 text-center">
-    <h1 class="text-base font-semibold tracking-tight">{t('uConfig builder')}</h1>
+    <h1 class="text-base font-semibold tracking-tight">{t('uConfig UI')}</h1>
     <p class="text-xs text-zinc-500">
       {t('Intent-based OpenWrt configuration')}
       {#if store.loadedFrom}<span class="text-zinc-400"> · {store.loadedFrom}</span>{/if}
