@@ -131,3 +131,8 @@ remote still uses); run its `generate.sh` first to build `generated/schema.json`
 Copyright (C) 2026  Zach Mandeville, Devan Carpenter, John Crispin
 
 SPDX-License-Identifier: GPL-2.0-only
+
+## wcoord
+
+Part of the [wcoord project](https://wcoord.informatics.coop)
+<img src="./docs/wcoord_logo.svg">
