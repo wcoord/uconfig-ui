@@ -1,6 +1,6 @@
 # uconfig UI
 
-A single-page app for authoring [uconfig](../uconfig) documents, the intent-based
+A web UI for authoring [uconfig](https://github.com/blogic/uconfig) documents, the intent-based
 configuration format for OpenWrt, and for managing a live device over its websocket
 control plane.
 
@@ -15,12 +15,10 @@ It works two ways:
 
 ## Stack
 
-- Svelte 5 (runes, not SvelteKit)
+- Svelte 5 (not SvelteKit)
 - Tailwind CSS v4 (via `@tailwindcss/vite`)
 - Vite 6
 - `@formatjs/intl` for internationalisation (catalogue in `src/lib/locales/`)
-
-Plain JavaScript, no TypeScript.
 
 ## Development
 
@@ -34,21 +32,20 @@ npm run i18n:extract # re-extract translatable strings into the locale catalogue
 
 ## Screens
 
-`App.svelte` is a small state machine over four top-level screens:
+The are 4 top-level screens:
 
 1. **welcome** - landing page: start from the default config, a bundled example, a
    locally saved config, or connect to a device by address.
-2. **login** - opens the websocket to the device and prompts for the password.
-3. **device** - the device dashboard (Network, State, System pages); a Configure button
-   opens the builder against the device's live config.
-4. **builder** - the schema-driven config editor (Unit, Radios, Interfaces, Services, and
-   a Configuration/changes section).
+2. **builder** - the schema-driven config editor (Unit, Radios, Interfaces, etc.).
+3. **login** - opens the websocket to the device and prompts for the password.
+4. **device** - the device dashboard (Network, State, System pages, etc.); a Configure
+   button opens the builder against the device's live config.
 
 ## Device control plane
 
 The connected mode talks JSON-RPC 2.0 over a websocket to the uconfig-ui server:
 
-- Endpoint `ws://<host>/uconfig`, subprotocol `ui`.
+- Endpoint `ws(s)://<host>/uconfig`, subprotocol `ui`.
 - `src/lib/connection.svelte.js` - the client: `connect()`, `login()`, `request()`,
   `upload()`, `disconnect()`. The connection resolves once the server emits its
   `login-required` event.
